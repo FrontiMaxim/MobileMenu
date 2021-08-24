@@ -21,6 +21,38 @@
     bottom: 50px;
 }
 
+nav {
+    display: flex;
+}
+
+.nav-item {
+    display: flex;
+    margin: 130px;
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(255, 157, 170);
+}
+
+.nav-item:hover {
+    color: rgb(255, 111, 135);
+}
+
+.more {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgb(255, 111, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    bottom: 60px;
+    transition: .3s;
+    cursor: pointer;
+}
+
 .social-links {
     position: absolute;
     display: flex;
@@ -28,6 +60,17 @@
     justify-content: center;
     text-align: center;
     pointer-events: none;
+}
+
+.social-links a {
+    position: relative;
+    margin: 10px;
+    transform: scale(0);
+    transition: .2s;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    pointer-events: all;
+    transition: all .3s;
 }
 
 .social-links a i {
@@ -70,34 +113,3 @@
 
 
 
-nav {
-    display: flex;
-}
-
-.nav-item {
-    display: flex;
-    margin: 130px;
-    font-size: 40px;
-    cursor: pointer;
-    color: rgb(255, 157, 170);
-}
-
-.nav-item:hover {
-    color: rgb(255, 111, 135);
-}
-
-.more {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: rgb(255, 111, 135);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 45px;
-    color: rgb(255, 255, 255);
-    bottom: 60px;
-    transition: .3s;
-    cursor: pointer;
-}
