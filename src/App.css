@@ -1,1 +1,93 @@
+.nav-bar {
+    position: relative;
+    width: 25rem;
+    height: 7rem;
+    background: rgb(255, 255, 255);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.068);
+} 
 
+.nav-bar::before {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 120px;
+    background: rgb(255, 226, 213);
+    border-radius: 50%;
+    bottom: 50px;
+}
+
+.social-links a i {
+    transition: all .3s;
+}
+
+.social-links a i:hover {
+    transform: scale(1.2);
+}
+
+/* This is for after click animation on PLUS ICON */
+.active {
+    height: 230px;
+    border-radius: 30px 30px 100px 100px;
+    pointer-events: none;
+}
+
+.active .fa-plus {
+    position: absolute;
+    animation: hide .3s linear forwards;
+    transition: .3s;
+}
+
+
+@keyframes hide {
+    10% {
+        transform: scale(1.5);
+        bottom: 25px;
+    }
+
+    90% {
+        transform: scale(45deg);
+        bottom: 25px;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+nav {
+    display: flex;
+}
+
+.nav-item {
+    margin: 130px;
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(255, 157, 170);
+}
+
+.nav-item:hover {
+    color: rgb(255, 111, 135);
+}
+
+.more {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgb(255, 111, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    bottom: 60px;
+    transition: .3s;
+    cursor: pointer;
+}

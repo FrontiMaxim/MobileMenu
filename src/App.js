@@ -1,4 +1,5 @@
 import MenuItem from './Components/MenuItem';
+import './App.css';
 
 function App() {
     let socialLinks = ['fab fa-instagram', 'fab fa-youtube', 'fab fa-whatsapp'];
