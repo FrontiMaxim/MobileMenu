@@ -21,6 +21,15 @@
     bottom: 50px;
 }
 
+.social-links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    pointer-events: none;
+}
+
 .social-links a i {
     transition: all .3s;
 }
@@ -66,6 +75,7 @@ nav {
 }
 
 .nav-item {
+    display: flex;
     margin: 130px;
     font-size: 40px;
     cursor: pointer;
